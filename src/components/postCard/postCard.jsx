@@ -9,10 +9,11 @@ const PostCard = ({ post }) => {
     <div className={styles.container}>
       <div className={styles.top}>
         <div className={styles.imgContainer}>
-          <Image src={post.img} fill alt="Nature" className={styles.img} />
+          <Image src={post.img ?? 'https://images.pexels.com/photos/1564473/pexels-photo-1564473.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fill alt="Nature" className={styles.img} />
         </div>
         <span className={styles.date}>
-          {post.createdAt?.toString().slice(4, 16)}
+          {post.createdAt?.toString().slice(4, 16) ??
+          new Date (). toString(). slice(4, 16)}
         </span>
       </div>
       <div className={styles.bottom}>
