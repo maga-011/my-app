@@ -39,7 +39,10 @@ const post =  await getSinglePost(params.slug);
             <span className={styles.detailValue}>
               {
               new Date().toString().slice(4, 16)}
+      
             </span>
+            
+
           </div>
         </div>
         <div className={styles.content}>{post.body}</div>
