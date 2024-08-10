@@ -114,32 +114,23 @@
 // export default testpage;
 
 "use client";
+import { useEffect, useState } from "react";
 
-import { useState } from "react";
+const TestPage = () => {
+  const [num, setNum] = useState(0);
 
-const testpage = () => {
-  const [isUser, setIsUser] = useState(false);
+  useEffect(() => {
+    return () => {
+      console.log("please give me more than 80 points");
+    };
+  }, []);
 
   return (
     <div>
-      {isUser ? (
-        <button
-          onClick={() => {
-            setIsUser(false);
-          }}
-        >
-          log in
-        </button>
-      ) : (
-        <button
-          onClick={() => {
-            setIsUser(true);
-          }}
-        >
-          register
-        </button>
-      )}
+      <h1>Current Number: {num}</h1>
+      <button onClick={() => setNum(num + 1)}>Increase Number</button>
     </div>
   );
 };
-export default testpage;
+
+export default TestPage;
