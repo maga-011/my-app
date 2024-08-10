@@ -5,7 +5,7 @@ const Footer = () => {
     <div className={styles.container}>
       <h4>MK</h4>
       <p className={styles.text}>
-        Created by Muhamed
+        Created by Muhamed!
       </p>
     </div>
   );
