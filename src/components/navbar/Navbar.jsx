@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <div className={styles.container}>
       <Link href="/" className={styles.logo}>
-        Logo
+        MK/MK
       </Link>
       <div className={styles.links}>
         {links.map((item, index, array) => {
