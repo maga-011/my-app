@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <div className={styles.textWrapper}>
-        <h1 className={styles.title}>Creative Thoughts Agency.</h1>
+        <h1 className={styles.title}>My First React JS </h1>
         <p className={styles.desc}>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
           blanditiis adipisci minima reiciendis a autem assumenda dolore.
@@ -24,7 +24,7 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.imgContainer}>
-        <Image src="/hero.gif" alt="" fill className={styles.heroImg} />
+        <Image src="https://images.pexels.com/photos/19897324/pexels-photo-19897324.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" fill className={styles.heroImg} />
       </div>
     </div>
   );

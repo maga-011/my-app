@@ -3,9 +3,9 @@ import styles from "./footer.module.css";
 const Footer = () => {
   return (
     <div className={styles.container}>
-      <h4>lamadev</h4>
+      <h4>MK</h4>
       <p className={styles.text}>
-        Lama creative thoughts agency © All rights reserved.
+        Created by Muhamed!
       </p>
     </div>
   );
